@@ -1,11 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-
+import Home from './Pages/Home';
 function App() {
   return (
     <div>
-      <h1>Nimish here to conquer</h1>
-
+      <Home/>
     </div>
   );
 }
