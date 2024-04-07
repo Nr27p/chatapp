@@ -1,0 +1,53 @@
+{
+  "auth": {
+    "chatapp0f6b7653": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyCharacters": [],
+          "passwordPolicyMinLength": 8
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito"
+    }
+  },
+  "function": {
+    "chatappd4fe6331d4fe6331CustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_function_chatappd4fe6331d4fe6331CustomMessage_deploymentBucketName": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "chatappd4fe6331d4fe6331CustomMessage"
+        }
+      ]
+    },
+    "AMPLIFY_function_chatappd4fe6331d4fe6331CustomMessage_s3Key": {
+      "usedBy": [
+        {
+          "category": "function",
+          "resourceName": "chatappd4fe6331d4fe6331CustomMessage"
+        }
+      ]
+    }
+  }
+}

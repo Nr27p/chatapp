@@ -1,0 +1,66 @@
+{
+  "version": "1",
+  "cognitoConfig": {
+    "identityPoolName": "chatapp80ca9a38_identitypool_80ca9a38",
+    "allowUnauthenticatedIdentities": false,
+    "resourceNameTruncated": "chatap80ca9a38",
+    "userPoolName": "chatapp80ca9a38_userpool_80ca9a38",
+    "autoVerifiedAttributes": [
+      "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+      "SMS Text Message"
+    ],
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "(YOUR VERFICATION CODE) ",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": true,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+      "Requires Lowercase",
+      "Requires Uppercase",
+      "Requires Numbers",
+      "Requires Symbols"
+    ],
+    "requiredAttributes": [
+      "email",
+      "name"
+    ],
+    "aliasAttributes": [],
+    "userpoolClientGenerateSecret": false,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientWriteAttributes": [
+      "email",
+      "name"
+    ],
+    "userpoolClientReadAttributes": [
+      "email",
+      "name"
+    ],
+    "userpoolClientLambdaRole": "chatap80ca9a38_userpoolclient_lambda_role",
+    "userpoolClientSetAttributes": true,
+    "sharedId": "80ca9a38",
+    "resourceName": "chatapp80ca9a3880ca9a38",
+    "authSelections": "identityPoolAndUserPool",
+    "useDefault": "manual",
+    "thirdPartyAuth": false,
+    "usernameAttributes": [
+      "email"
+    ],
+    "userPoolGroups": false,
+    "adminQueries": false,
+    "triggers": {
+      "CustomMessage": [
+        "verification-link"
+      ]
+    },
+    "hostedUI": false,
+    "userPoolGroupList": [],
+    "serviceName": "Cognito",
+    "verificationBucketName": "chatapp80ca9a3880ca9a38verificationbucket",
+    "usernameCaseSensitive": false,
+    "useEnabledMfas": true
+  }
+}

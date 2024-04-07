@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import "@aws-amplify/ui-react/styles.css";
+import{
+  withAuthenticator
+} from '@aws-amplify/ui-react';
 
 const navigation = [
     { name: 'Home', href: '#home' },
@@ -8,7 +12,8 @@ const navigation = [
     { name: 'services', href: '#services' },
 ]
 
-const Home = () =>{
+
+const Home = ({signOut}) =>{
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
@@ -105,14 +110,12 @@ const Home = () =>{
                 One of the most secure app for chatting with your friends and family.
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <a
-                href="#"
-                className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-              >
-                Login
-              </a>
+                <button className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                    onClick={signOut}>
+                Logout
+                </button>
               <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-                Register
+                User Dashboard
               </a>
             </div>
           </div>
@@ -133,4 +136,4 @@ const Home = () =>{
     </div>
   );
 };
-export default Home;    
+export default withAuthenticator(Home);    

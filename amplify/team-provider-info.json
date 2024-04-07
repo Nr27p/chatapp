@@ -1,0 +1,26 @@
+{
+  "staging": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-amplifyce78220e5a974-staging-9bda1-authRole",
+      "UnauthRoleArn": "arn:aws:iam::211125601271:role/amplify-amplifyce78220e5a974-staging-9bda1-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::211125601271:role/amplify-amplifyce78220e5a974-staging-9bda1-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-amplifyce78220e5a974-staging-9bda1-deployment",
+      "UnauthRoleName": "amplify-amplifyce78220e5a974-staging-9bda1-unauthRole",
+      "StackName": "amplify-amplifyce78220e5a974-staging-9bda1",
+      "StackId": "arn:aws:cloudformation:us-east-1:211125601271:stack/amplify-amplifyce78220e5a974-staging-9bda1/c4f42d30-f4c7-11ee-9f63-0ef4ab00af13",
+      "AmplifyAppId": "d2xd2ga0fgzf2p"
+    },
+    "categories": {
+      "auth": {
+        "chatapp0f6b7653": {}
+      },
+      "function": {
+        "chatappd4fe6331d4fe6331CustomMessage": {
+          "deploymentBucketName": "amplify-amplifyce78220e5a974-staging-9bda1-deployment",
+          "s3Key": "amplify-builds/chatappd4fe6331d4fe6331CustomMessage-32345068363136556e4c-build.zip"
+        }
+      }
+    }
+  }
+}
